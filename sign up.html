@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" href="./image/logo-removebg-preview.png" type="image/icon" sizes="16x16">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sign up.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./image/logo-removebg-preview.png" alt="Perfect Fit">
+            <h2>Create Acccount</h2>
+        </div>
+
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Your Username" id="username">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Your mail ID" id="email">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="New password" id="password" minlength="">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password" id="conpassword">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <button > Sign Up</button>
+        </form>
+    </div>
+    <div class="or">
+        <div class="line"></div>
+        <p><strong>OR</strong></p>
+        <div class="line"></div>
+    </div>
+    <div class="container two">
+        <div class="header head">
+            <h5>Welcome To Perfect Fit</h5>
+            <small id="small">Join/Sign Up Using</small>
+        </div>
+
+        <div class="fb">
+            <div class="facebook">
+                <img src="../Form/image/facebook.png" alt="fb">
+                <h5>FACEBOOK</h5>
+            </div>
+            <div class="google">
+                <img src="../Form/image/glogo-removebg-preview.png" alt="google">
+                <h5>GOOGLE</h5>
+            </div>
+        </div>
+        <div class="lines">
+            <div class="line1"></div>
+            <p><strong>OR</strong></p>
+            <div class="line2"></div>
+        </div>
+        <div class="myform " id="myform">
+            <h4>Enter Your Mobile Number</h4>
+            <div class="form-control mobile">
+                <input type="number" placeholder="Enter Your Mobile Number" id="mobile"  required>
+                
+                <small>Error message</small>
+            </div>
+            <div class="terms" id="terms">
+                <input type="checkbox" id="checkbox" >
+                <small>By clicking, I accept the <span>Terms and Conditions.</span></small>
+            </div>
+            <button id="otp" onclick="myFunction()"> Send OTP</button>
+        </div>
+    </div>
+    <div class="container register">
+        <p>Already Have An Account ?<a href="Login.html">Click Here</a></p>
+    </div>
+    
+    <div class="overlay" id="popup">
+        <div class="popuptext">
+            
+                <i onclick="Close()" class="fa-solid fa-xmark"></i>
+                <div class="content">
+                    <p>Sign In with OTP</p>
+                    <small>Please Enter The OTP Sent To Your Mobile Number</small>
+                </div>
+                <div class="enter" id="enter">
+                    <input type="number" placeholder="Enter OTP"  required>
+                </div>
+                <div class="submit">
+                    <button type="submit"> Submit OTP</button>
+                </div>
+        
+        </div>
+    </div>
+
+
+
+    <!-- script  -->
+    <script src="./script/signup.js"></script>
+
+</body>
+
+</html>

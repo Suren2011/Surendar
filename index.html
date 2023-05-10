@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./image/logo-removebg-preview.png" type="image/icon" sizes="16x16">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form" id="form">
+            <div class="logo">
+                <img src="../Form/image/[removal.ai]_tmp-6414392072ca3.png" alt="perfect fit">
+            </div>
+
+            <div class="input form-control">
+                <input type="text" name="name" placeholder="Username, Phone number or Email"  id="username" required>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <div class="password form-control">
+                <input oninput="show()" type="password" name="password" placeholder="Password"  id="password" required >
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa-solid fa-eye" id="show" onclick="change()"></i>
+                <small>Error message</small>
+            </div>
+            <div class="login">
+                <button onclick="check()">Log In</button>
+            </div>
+            <div class="or">
+                <div class="line1"></div>
+                <p><strong>OR</strong></p>
+                <div class="line2"></div>
+            </div>
+            <div class="new">
+                <p><b>Don't have an account? <a href="./sign up.html">Sign Up</a></b></p>
+            </div>
+            <div class="dload">
+                <img class="googleplay" src="../Form/image/googleplay.png" alt="google play"></button>
+                <img class="appstore" src="../Form/image/appstore.png" alt="app store"></button>
+            </div>
+            <div class="get"><b>Get it on</b></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="forgot">
+            <p><b>Forgot password?<a href="#"> click here</a></b></p>
+        </div>
+    </div>
+
+    <div class="newpassword"></div>
+
+    <!-- script -->
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
